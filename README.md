@@ -17,12 +17,12 @@ to run version 2 follow these steps:
 
 1- run server.py
 
-2- run sender.py and reciever.py
+2- run sender.py and receiver.py
 
 3- when they sender.py window appears click the button and choose an image to encrypt
 
 4- click 'encrypt and send' button
 
-5- wait until the image and in the reciever.py GUI ( it may take some time of the image is big)
+5- wait until the image and in the receiver.py GUI ( it may take some time of the image is big)
 
-6- click 'decrypt' button in the reciever.py window
+6- click 'decrypt' button in the receiver.py window
