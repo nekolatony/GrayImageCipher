@@ -90,7 +90,7 @@ def main():
         send_msg(s,pickle.dumps('reciever'))
 
         DH = D_H.new(14)  # used diffie hellman to get the key used in the encryption
-        key = DH.negotiate(s)  # smeding the public key to the reciever and recieving the public key of the reciever
+        key = DH.negotiate(s)  # smeding the public key to the receiver and receiving the public key of the receiver
 
         root = tk.Tk()
         root.title("RECIEVER")
@@ -98,7 +98,7 @@ def main():
         frame.pack()
         iframe7 = tk.Frame(frame, bd=2, relief=tk.RAISED)
         iframe7.pack(expand=1, fill=tk.X, pady=10, padx=5)
-        label = tk.Label(iframe7, text='Please wait until the photo is recieved').pack()
+        label = tk.Label(iframe7, text='Please wait until the photo is received').pack()
 
         App(root,frame,iframe7,s,key)
 

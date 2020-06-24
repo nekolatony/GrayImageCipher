@@ -37,7 +37,7 @@ def main():
 
 
                 # Senderkey = pickle.loads(recv_msg(sender))
-                Senderkey =DH.acceptNegotiation(sender)  # smeding the public key to the reciever and recieving the public key of the reciever
+                Senderkey =DH.acceptNegotiation(sender)  # smeding the public key to the receiver and receiving the public key of the receiver
                 Senderkey = Senderkey % 2**52
                 Senderkey = str(Senderkey)
                 RCsenderKey = generateKey(Senderkey)
@@ -48,7 +48,7 @@ def main():
                 DH = D_H.new(14)  # used diffie hellman to get the key used in the encryption
                 # Recieverkey = pickle.loads(recv_msg(reciever))
 
-                Recieverkey =DH.acceptNegotiation(reciever)  # smeding the public key to the reciever and recieving the public key of the reciever
+                Recieverkey =DH.acceptNegotiation(reciever)  # smeding the public key to the receiver and receiving the public key of the receiver
                 Recieverkey = Recieverkey % 2**52
                 Recieverkey = str(Recieverkey)
                 RCrecieverKey = generateKey(Recieverkey)
